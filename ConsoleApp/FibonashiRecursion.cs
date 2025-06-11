@@ -10,11 +10,8 @@ namespace ConsoleApp
     {
         internal long Fibonasci(int n)
         {
-            if (n <= 1)
-            {
-                return n;
-            }
-
+            if (n <= 1) return 0;
+            if (n == 2) return 1;
             return Fibonasci(n - 1) + Fibonasci(n - 2);
         }
     }

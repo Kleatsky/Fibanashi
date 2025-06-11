@@ -17,14 +17,14 @@ namespace ConsoleApp
             sw.Reset();
 
             sw.Start();
-            fibonashiRecursion.Fibonasci(count);
+            long r =fibonashiRecursion.Fibonasci(count);
             sw.Stop();
 
             Console.WriteLine($"FibonashiRecurtion({count}):\n{sw.Elapsed.TotalNanoseconds} наносекунд.\n");
             sw.Reset();
 
             sw.Start();
-            fibonasciLoop.Fibonasci(count);
+            long l =fibonasciLoop.Fibonasci(count);
             sw.Stop();
 
             Console.WriteLine($"FibonasciLoop({count}):\n{sw.Elapsed.TotalNanoseconds} наносекунд.\n");
